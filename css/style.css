@@ -145,6 +145,12 @@ section {
     margin: 0 auto;
     display: flex;
     border-color: wheat;
+    transition: transform 0.3s ease;
+}
+
+a:hover .icon-proyect {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 #contacto {
@@ -193,7 +199,7 @@ section {
     cursor: pointer;
 }
 
-#Form button:hover{
+#Form button:hover {
     background-color: #8B82BD;
 }
 
