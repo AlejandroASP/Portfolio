@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Medium Italic';
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+    font-family: 'Roboto Medium';
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #E4E1E1;
+    background-color: #131313;
+    text-shadow: 5px 5px 5px black;
+}
+
+header {
+    background: #1B1B1C;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+/* listado de header */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a:hover {
+    color: #8B82BD;
+}
+
+.traduccion {
+    display: inline-flex;
+    gap: 8px;
+    margin-left: 30px;
+}
+
+.traduccion span {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.2s;
+    font-size: 1.2em;
+}
+
+.traduccion span:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.traduccion span.active {
+    opacity: 1;
+    border-bottom: 2px solid #8B82BD;
+}
+
+/* ------------------ */
+
+#inicio {
+    background-color: #1B1B1C;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    filter: drop-shadow(5px 5px 1px black);
+}
+
+#sobre-mi {
+    background-color: #1B1B1C;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#proyectos {
+    background-color: #1B1B1C;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#proyectos .proyecto {
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px #131313;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto p {
+    text-align: center;
+    font-family: 'Roboto Medium Italic';
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.icon-proyect {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    border-color: wheat;
+}
+
+#contacto {
+    background-color: #1B1B1C;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Form input {
+    width: 600px;
+    height: 30px;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#Form textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    max-height: 300px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#Form button {
+    padding: 10px 130px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+#Form button:hover{
+    background-color: #8B82BD;
+}
+
+footer {
+    background: #1B1B1C;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    color: #8B82BD;
+    text-shadow: none;
+}
+
+/*formato tablet*/
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .traduccion {
+        margin-left: 0;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+
+    h3 {
+        text-align: center;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* formato movil */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #Form input {
+        width: 300px;
+        height: 30px;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 4px;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    #Form textarea {
+        width: 88%;
+        min-height: 100px;
+        resize: vertical;
+        max-height: 300px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+}
+
+/* ------------ */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* menu */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+}
+
+/* Resetear estilos heredados en SweetAlert */
+.swal2-popup {
+    font-family: 'Roboto Bold' !important;
+    background: #fff !important;
+    color: #1B1B1C !important;
+    border-radius: 8px !important;
+    text-shadow: none !important;
+}
