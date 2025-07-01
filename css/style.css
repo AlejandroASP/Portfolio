@@ -54,6 +54,17 @@ nav ul li a:hover {
     margin-left: 30px;
 }
 
+.bandera {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: opacity 0.3s;
+}
+.bandera:hover {
+    opacity: 0.8;
+}
+
 .traduccion span {
     cursor: pointer;
     opacity: 0.7;
@@ -331,3 +342,4 @@ footer {
     border-radius: 8px !important;
     text-shadow: none !important;
 }
+
